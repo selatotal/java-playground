@@ -39,5 +39,9 @@ public class App {
         System.out.println("GSON: " + gson.toJson(phoneRecord));
         System.out.println("JACKSON: " + mapper.writeValueAsString(phoneRecord));
 
+        // ReCORD WHITH SAME VALUES THAN phoneRecord
+        PhoneRecord phoneRecord4 = new PhoneRecord("50", "12321321");
+        System.out.println("TO String: " + phoneRecord4 + " " + phoneRecord4);
+        System.out.println("IS EQUALS: " + (phoneRecord4 == phoneRecord4));
     }
 }
